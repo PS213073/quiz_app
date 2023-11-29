@@ -28,10 +28,10 @@ class _QuestionsScreenState extends State<QuestionsScreen> {
   Widget build(BuildContext context) {
     final currentQuestion = questions[currentQuestionIndex];
 
-    return Container(
-      margin: const EdgeInsets.all(40),
-      child: SizedBox(
-        width: double.infinity,
+    return SizedBox(
+      width: double.infinity,
+      child: Container(
+        margin: const EdgeInsets.all(40),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           crossAxisAlignment: CrossAxisAlignment.stretch,
